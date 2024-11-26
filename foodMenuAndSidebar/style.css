@@ -1,0 +1,449 @@
+*,*::after,*::before {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.container {
+        width: 80%;
+        margin: 20px auto 70px;
+        display: flex;
+        gap: 10px;
+        padding: 0 10px;
+}
+
+.container .foods-menu {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+}
+
+.container .foods-menu .food-menu{
+        height: 180px;
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: #f9f9f9;
+        display: flex;
+        box-shadow: 0px 2px 5px 0px #9a8a8a;;
+}
+.container .foods-menu .food-menu .image {
+        width: 45%;
+        align-items: stretch;
+}
+
+.container .foods-menu .food-menu .image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+}
+
+.container .foods-menu .food-menu .content{
+        padding: 20px;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+}
+
+.container .foods-menu .food-menu .content h4{
+        color: #626368;
+        font-family: 'Gloria Hallelujah', cursive !important;
+}
+
+.container .foods-menu .food-menu .content .time, .container .section .time{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        font-size: 11px;
+}
+
+.container .foods-menu .food-menu .content .time p, .container .section .time p{
+        font-size: 10px;
+}
+
+
+.container .foods-menu .food-menu .content .time .calendar,.container .foods-menu .food-menu .content .time .comments, .container .section .time .comments, .container .section .time .calendar{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 13px;
+}
+
+.container .foods-menu .food-menu .content .time .calendar a,.container .foods-menu .food-menu .content .time .comments a, .container .section .time .comments a,.container .section .time .calendar a{
+        color: #e83d4c;
+        text-decoration: none;
+}
+
+.container .foods-menu .food-menu .content .time .calendar {
+        margin-right: 5px;
+        padding-right: 5px;
+        border-right: 2px solid red;
+}
+
+
+.container .foods-menu .food-menu .content .paragraph{
+        color: #cbc7cb;
+        font-size: 13px;
+        line-height: 1.5;
+
+}
+.container .foods-menu .food-menu .content a:last-child{
+        text-decoration: none;
+        color: #e83d4c;
+        font-size: 13px;
+        margin-top: 10px;
+}
+
+
+.container .foods-menu .pages {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+}
+
+
+.container .pages .page {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+}
+
+.container .pages .page a {
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #c2c2c2;
+        transition: .4s;
+        border: 2px solid #ccc;
+        border-radius: 50%;
+        transform: .4s;
+}
+.container .pages .page a:hover {
+        background-color: #e8272e;
+        color: white;
+        border: none;
+}
+
+.container .sidebar {
+        width: 20%;
+        padding: 10px;
+}
+
+.container .sidebar .search {
+        width: 100%;
+        border-radius: 15px;
+        border: 1px solid #cfd5db;
+        display: flex;
+        align-items: center;
+        padding: 8px 15px;
+        position: relative;
+}
+
+.container .sidebar .search input {
+        width: 100%;
+        border: none;
+        outline: none;
+}
+
+.container .sidebar .search a {
+        position: absolute;
+        right: 15px;
+        font-size: 14px;
+}
+
+.container .sidebar .section {
+        margin-top: 20px;
+}
+
+.container .sidebar .section .title {
+        font-size: 11px;
+        border-bottom: 1px solid #ccc;
+        padding: 5px 0;
+}
+
+.container .sidebar .section .title h4{
+        font-family: 'Gloria Hallelujah', cursive ;
+}
+
+.container .sidebar .section .categories {
+        margin-top: 10px;
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        color: #a9b9cb;
+}
+
+.container .sidebar .section .categories .category{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+
+.container .sidebar .section .categories .category .name{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+}
+
+
+.container .sidebar .section .posts {
+        margin-top: 10px;
+        font-size: 12px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        color: #a9b9cb;
+}
+
+.container .sidebar .section .posts .post{
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        padding: 7px 0;
+}
+
+.container .sidebar .section .posts .image {
+        width: 30%;
+        align-self: flex-start;
+}
+
+.container .sidebar .section .posts .image img {
+        width: 100%;
+        border-radius: 10px;
+        height: auto;
+}
+
+.container .sidebar .section .posts .contents {
+        width: 70%;
+        font-size: 10px;
+}
+
+.container .section .time {
+        margin-top: 7px;
+}
+
+.container .section .posts .post h4 {
+        font-family: 'Gloria Hallelujah', cursive !important;
+        line-height: 1;
+}
+
+.container .section .posts .post:not(:last-child) {
+        border-bottom: 1px solid #cfd5db;
+}
+
+.container .sidebar .section .offer {
+        width: 100%;
+        padding: 15px 10px;
+        height: auto;
+        background-image: url(imgs/delicious-arabic-fast-food-skewers-black-plate.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        color: white;
+        z-index: 1;
+}
+
+.container .sidebar .section .offer .overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: .5;
+        z-index: -1;
+}
+
+.container .sidebar .section .offer .content {
+        background-color: transparent;
+        z-index: 3;
+}
+
+.container .sidebar .section .offer .content h2 {
+        line-height: 1.5;
+        font-style: italic;
+        text-transform: capitalize;
+        font-size: 1.7rem;
+        font-weight: 500;
+}
+
+.container .sidebar .section .offer .content h2 span {
+        color: #e8272e;
+        font-size: 1.9rem;
+        margin-bottom: 5px;
+}
+
+.container .sidebar .section .offer .content p {
+        margin-bottom: 10px;
+        font-size: .6rem;
+        font-weight: normal;
+}
+
+.container .sidebar .section .offer .content button {
+        background-color: #e8272e;
+        text-align: center;
+        padding: 8px 18px;
+        border-radius: 20px;
+        border: none;
+        margin-bottom: 8px;
+}
+
+.container .sidebar .section .offer .content button a{
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        font-size: .7rem;
+        font-weight: bold;
+}
+
+.container .section .instagram {
+        margin-top: 10px;
+        display: grid;
+        gap: 5px;
+        grid-template-columns: repeat(auto-fill, minmax(50px,1fr));
+        grid-template-rows: repeat(auto-fit, 60px);
+}
+
+.container .section .instagram .image {
+        height: 60px;
+}
+
+.container .section .instagram .image img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+}
+
+.container .section .tags {
+        margin-top: 10px;
+}
+
+.container .section .tags .tag{
+        font-size: .7rem;
+        background-color: #f4f4f4;
+        color: #7cb9d9;
+        width: fit-content;
+        padding: 5px 8px;
+        margin-bottom: 8px;
+        border-radius: 20px;
+        display: inline-block;
+}
+
+.footer {
+        width: 100%;
+        height: auto;
+        min-height: 80px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(0, 0, 0,.7);
+}
+
+.footer::before {
+        content: '';
+        position: absolute;
+        background-image: url('imgs/delicious-arabic-fast-food-skewers-black-plate.jpg');
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+}
+
+.footer .newsletter {
+        background-color: #e8272e;
+        color: white;
+        width: 80%;
+        position: absolute;
+        left: 50%;
+        top: -45px;
+        transform: translateX(-50%);
+        padding: 20px;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+}
+
+.footer .newsletter .content {
+        width: 50%;
+}
+.footer .newsletter .content h3{
+        font-family: 'Gloria Hallelujah', cursive !important;
+        font-size: .9rem;
+
+}
+.footer .newsletter .content p{
+        /* margin-top: 5px; */
+        width: 82%;
+        font-size: .9rem;
+}
+
+.footer .newsletter .subscribe {
+        width: 50%;
+        background-color: #ea3d43;
+        padding: 10px 0;
+        border-radius: 50px;
+        margin-right: auto;
+}
+
+.footer .newsletter .subscribe .action {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 5px 0 20px;
+}
+
+
+.footer .newsletter .subscribe .action input {
+        flex-grow: 1;
+        border: none;
+        outline: none;
+        background-color: #ea3d43;
+        color: white;
+}
+
+
+.footer .newsletter .subscribe .action input::placeholder {
+        color: white;
+}
+
+
+.footer .newsletter .subscribe .action button {
+        background-color: white;
+        text-transform: uppercase;
+        border: none;
+        outline: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        border-radius: 50px;
+}
+
+
+.footer .newsletter .subscribe .action button a{
+        text-decoration: none;
+        color: #e83d4c;
+        font-size: .8rem;
+        font-weight: bold;
+}
+
