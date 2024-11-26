@@ -1,0 +1,265 @@
+*,*::after,*::before {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Cairo', sans-serif;
+}
+
+/* CONTAINER AND HEADER START  */
+
+.container {
+        background-color: #f5f5f5;
+        padding: 20px 30px;
+}
+
+.container .header {
+        background-color: white;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+}
+
+
+.container .header .picture {
+        height: 100%;
+        flex-basis: 25%;
+        padding: 15px;
+        border-right: 1px solid #ccc;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+}
+
+.container .header .picture img{
+        width: 180px;
+        border-radius: 50%;
+        border: 3px solid #009688;
+}
+.container .header h5{
+        font-size: 20px;
+}
+.container .header .picture .progress-bar{
+        width: 100%;
+        height: 15px;
+        border-radius: 5px;
+        position: relative;
+        background-color: #f1f1f1;
+}
+
+.container .header .picture .progress-bar span{
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        background-color: #009688;
+}
+
+.container .header .picture P {
+        font-size: 12px;
+        font-weight: 100;
+}
+
+.container .header .picture p span {
+        color: #009688;
+        font-weight: 900;
+}
+
+
+.container .header .description{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding: 15px;
+        margin-left: 10px;
+
+}
+
+.container .header .description h2{
+        font-size: 2em;
+        margin-bottom: 20px;
+}
+
+.container .header .description .paragraph {
+        font-size: 20px;
+        line-height: 1.8;
+        width: 86%;
+}
+
+.container .header .description .road {
+        position: absolute;
+        right: 40px;
+        bottom: 20px;
+        font-size: 14px;
+        font-weight: lighter;
+}
+
+.line {
+        height: 1px;
+        width: 90%;
+        background-color: #eeeeee;
+        margin: 20px auto;
+}
+
+/* CONTAINER AND HEADER END  */
+
+
+/* POINTS LOG SECTION START  */
+.container .points-log {
+        background-color: white;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 15px;
+}
+
+.container .points-log .title {
+        background-color: #607d8b;
+        color: white;
+        width: fit-content;
+        font-size: 18px;
+        font-weight: 900;
+        padding: 10px 15px;
+        margin-bottom: 10px;
+}
+
+.container .points-log .point {
+        padding: 10px 0;
+}
+
+.container .points-log .point:not(:last-child) {
+        border-bottom: 1px solid #eee;
+}
+
+.container .points-log .point .number {
+        color: #009688;
+        font-weight: 900;
+}
+
+.container .points-log .point .quest{
+        color: #e91e63;
+        font-weight: 900;
+}
+
+/* POINTS LOG SECTION END  */
+
+/* TROPHIES SECTION START  */
+.container .trophies {
+        background-color: white;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 15px;
+}
+
+.container .trophies .title {
+        background-color: #607d8b;
+        color: white;
+        width: fit-content;
+        font-size: 18px;
+        font-weight: 900;
+        padding: 10px 15px;
+        margin-bottom: 10px;
+}
+
+.container .trophies .pictures {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 4px;
+        padding: 10px 0;
+}
+
+.container .trophies .pictures img {
+        width: calc(100% / 13);
+}
+
+.container .trophies .pictures img.transparent {
+        opacity: .3;
+}
+
+/* TROPHIES SECTION END  */
+
+
+/* LADDER NEWS SECTION START  */
+.container .news {
+        background-color: white;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 15px;
+}
+
+.container .news .title {
+        background-color: #607d8b;
+        color: white;
+        width: fit-content;
+        font-size: 18px;
+        font-weight: 900;
+        padding: 10px 15px;
+        margin-bottom: 10px;
+}
+
+.container .news div {
+        font-size: 20px;
+}
+.container .news .number {
+        color: #009688;
+        font-weight: 900;
+}
+
+.container .news .quest{
+        color: #e91e63;
+        font-weight: 900;
+}
+/* LADDER NEWS SECTION END  */
+
+/* POWER SECTION START */
+.container .power {
+        background-color: white;
+        width: 90%;
+        margin: 0 auto 10px;
+        padding: 15px;
+}
+
+.container .power .title {
+        background-color: #607d8b;
+        color: white;
+        width: fit-content;
+        font-size: 18px;
+        font-weight: 900;
+        padding: 10px 15px;
+        margin-bottom: 10px;
+}
+
+.container .power .power-step {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+}
+
+.container .power .power-step:not(:last-child){
+        border-bottom: 1px solid #eee;
+}
+
+.container .power .power-step p{
+        font-size: 18px;
+}
+
+.container .power .power-step .yes {
+        color: #009688;
+        font-weight: 900;
+}
+
+.container .power .power-step .non {
+        color: #e91e63;
+        font-weight: 900;
+}
+/* POWER SECTION END */
