@@ -1,0 +1,23 @@
+body{
+        height: 5000px;
+}
+
+.up{
+        position: fixed;
+        bottom: 30px;
+        right: -30px;
+        background: #f41414;
+        color: white;
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 15px;
+        font-family: "Poppins",sans-serif;
+        cursor: pointer;
+        transition: .4s;
+}
+
+
+.up.show{
+        right: 30px;
+ 
+}
