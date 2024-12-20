@@ -1,0 +1,220 @@
+* {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+}
+
+body {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+}
+
+
+.container {
+        padding-left: 15px;
+        padding-right: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+}
+
+@media (max-width: 1030px) {
+        .container {
+                flex-direction: column;
+                gap: 50px;
+        }
+}
+
+
+.child {
+        height: 100%;
+}
+
+.one {
+        flex-basis: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+@media (max-width: 1030px) {
+        .one {
+                flex-direction: column;
+                flex-basis: 100%;
+                margin-top: 80px;
+        }
+}
+
+
+
+.container .one .img {
+        position: relative;
+}
+
+
+
+.container .one img {
+        width: 300px;
+        height: 200px;
+        border: 2px solid #f88992;
+        margin-right: 20px;
+}
+
+.container .one .img::before {
+        content: '';
+        position: absolute;
+        width: 300px;
+        height: 220px;
+        border: 10px solid #f88992;
+        left: 40px;
+        top: -20px;
+        transform: scale(1.1);
+        z-index: -1;
+}
+
+.container .two {
+        flex-basis: 60%;
+        padding-right: 20px;
+        padding-left: 20px;
+}
+
+@media (max-width: 1030px) {
+        .container .two {
+                flex-basis: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 30px;
+        }
+        .container .two h1 {
+                text-align: center;
+        }
+
+        
+}
+
+.container .two h1 {
+        font-weight: bold;
+        text-transform: capitalize;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 60%;
+        font-size: 35px;
+        line-height: 1.1;
+        margin-bottom: 10px;
+}
+
+.container .two .shape {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border: 1px solid #f46883;
+        position: relative;
+        margin-right: 35px;
+}
+
+.container .two .shape::before {
+        content: '';
+        position: absolute;
+        top: 3px;
+        left: 4px;
+        background-color: #f46883;
+        width: 30px;
+        border: 1px solid #f46883;
+}
+
+
+.container .two .about {
+        display: inline-block;
+        font-size: 14px;
+        color: #f46883;
+        font-weight: 900;
+        margin-bottom: 20px;
+}
+
+@media (max-width: 1030px) {
+        
+.container .two .about {
+        font-size: 20px;
+        margin-top: 20px;
+}
+}
+
+.container .two .paragraphe {
+        font-size: 18px;
+        color: #90988f;
+        line-height: 1.5;
+        width: 80%;
+        margin-bottom: 20px;
+}
+
+@media (max-width: 1030px) {
+        
+        .container .two .paragraphe {
+                text-align: center;
+        }
+}
+        
+
+
+.container .two .choices {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        gap: 10px;
+}
+
+
+@media (max-width: 998px) {
+        .container .two .choices {
+                flex-direction: column;
+                gap: 20px;
+        }
+        .container .two .choices .choice {
+                width: 100% !important;
+        }
+}
+
+
+.container .two .choices .choice {
+        width: 170px;
+        height: 130px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #e5e5e5;
+        position: relative;
+}
+
+.container .two .choices .choice::after {
+        content: '';
+        position: absolute;
+        border-width: 10px;
+        border-style: solid;
+        border-color: #f46883 #f46883 transparent transparent;
+        top: 10px;
+        right: 10px;
+}
+
+.container .two .choices .choice span {
+        position: absolute;
+        font-size: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #90988f;
+        right: 20px;
+        bottom: 30px;
+        opacity: .3;
+        font-weight: 600;
+}
+
+
+.container .two .choices .choice .icon {
+        font-size: 50px;
+        font-weight: 900;
+        margin-bottom: 10px;
+}
