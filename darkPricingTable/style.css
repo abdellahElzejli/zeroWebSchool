@@ -1,0 +1,108 @@
+*,*::after,*::before {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.container .table {
+        background-color: #242424;
+        color: white;
+        text-align: center;
+        width: 250px;
+        padding: 30px 0;
+        border-right: 1px solid #525252;
+        transition: .5s;
+}
+
+.container .table .head {
+        padding: 20px 0;
+}
+
+.container .table .head h4{
+        font-size: 25px;
+        margin-bottom: 20px;
+}
+
+.container .table .head .price {
+        position: relative;
+        width: fit-content;
+        margin: 0 auto;
+}
+
+.container .table .head .price span:first-child {
+        position: absolute;
+        font-weight: bold;
+        left: -8px;
+        top: -6px;
+}
+
+.container .table .head .price span:nth-child(2) {
+        font-size: 25px;
+}
+
+.container .table .head .price span:not(:last-child){
+        font-weight: 700
+}
+
+.container .table .head .price span:last-child{
+        margin-left: -5px;
+}
+
+.container .table .body p {
+        padding: 15px 0;
+        color: #545d59;
+        font-weight: 600;
+        font-size: 13px;
+        border-top: 1px solid #525252;
+}
+
+.container .table .body p:nth-child(odd){
+        background-color: #2a2a2a;
+}
+
+.container .table .footer {
+        padding: 30px;
+}
+
+.container .table .footer a {
+        text-decoration: none;
+        border: 1px solid #525252;
+        color: inherit;
+        padding: 8px 25px;
+        transition: .5s;
+}
+
+.container .table .footer a:hover {
+        background-color: #525252;
+        border-color: #242424;
+}
+
+.container .table:nth-child(3){
+        background-color: #03a9f4;
+        border: none;
+        padding: 50px 0;
+
+}
+
+.container .table:nth-child(3) .body p{
+        background-color: #03a9f4;
+        color: white;
+        border-color: #33b9f6;
+}
+
+.container .table:nth-child(3) .footer a{
+        border-color: #33b9f6;
+}
+.container .table:nth-child(3) .footer a:hover{
+        background-color: #33b9f6;
+        border-color: #03a9f4;
+}
