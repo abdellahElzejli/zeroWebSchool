@@ -1,0 +1,49 @@
+body {
+        margin: 0;
+      
+}
+
+
+.parent {
+        width: 800px;
+        background-color: rgb(228 234 237 / 50%);;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+}
+
+.sub-parent-one div,.sub-parent-two div, .sub-parent-three div, .sub-parent-four div {
+        margin: 10px 15px;
+        padding: 15px;
+        background-color: rgb(188 189 191 / 91%);
+        text-align: center;
+        float: left;
+}
+.sub-parent-one div {
+        width: calc(100% - 60px );
+}
+.sub-parent-two div {
+        width: calc((100% / 2) - 60px);
+}
+.sub-parent-three div {
+        width: calc((100% / 3) - 60px);
+}
+.sub-parent-four div {
+        width: calc((100% / 4) - 60px);
+}
+
+
+.clear {
+        clear: both;
+}
+
+/* 
+  parent width 800px
+  padding 15px + margin 15px = 60 px
+
+  1- 800px - 60 px
+  2- 800px - (60*2) px
+  3- 800px - (60*3) px
+  4- 800px - (60*4) px)
+
+*/

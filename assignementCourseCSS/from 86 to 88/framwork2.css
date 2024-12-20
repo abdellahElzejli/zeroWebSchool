@@ -1,0 +1,39 @@
+*{
+        position: relative;
+}
+*.arrow.top::before,*.arrow.bottom::before,*.arrow.left::before,*.arrow.right::before{
+        content: '';
+        position: absolute;
+        border-style:solid ;
+        border-width: 20px;
+}
+
+*.arrow.top::before {
+        border-color: transparent transparent #dddddd transparent;
+        top: -20px;
+        left: 50%;
+        transform: translate(-50%,-50%);
+}
+
+*.arrow.bottom::before {
+        border-color: #dddddd transparent transparent transparent;
+        bottom: -60px;
+        left: 50%;
+        transform: translate(-50%,-50%);
+}
+
+*.arrow.left::before {
+        border-color: transparent #dddddd transparent transparent;
+        top: 50%;
+        left: -20px;
+        transform: translate(-50%,-50%);
+}
+
+*.arrow.right::before {
+        border-color: transparent transparent transparent #dddddd;
+        top: 50%;
+        right: -60px;
+        transform: translate(-50%,-50%);
+}
+
+

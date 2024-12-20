@@ -1,0 +1,8 @@
+div {
+        width: 400px;
+        padding: 10px;
+        background-color: #ccc;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+}

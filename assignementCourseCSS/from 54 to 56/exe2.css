@@ -1,0 +1,43 @@
+* {
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+} 
+
+.parent {
+        width: 600px;
+}
+
+.parent div{
+        width: 100%;
+        padding: 10px;
+        position: relative;
+}
+
+.parent div input{
+        display: block;
+        width: 100%;
+        background-color: #eee;
+        padding: 20px;
+        border: none;
+        outline: none;
+        font-weight: 600;
+        caret-color: red;
+        position: relative;
+}
+
+.parent div::before{
+        content: '';
+        position: absolute;
+        bottom: 8px;
+        left: 10px;
+        height: 2px;
+        width: calc(100% - 20px);
+        background-image: linear-gradient(to right,#f44336 50%,#f44336 50%,#009688 50%,#009688 100%);
+}
+

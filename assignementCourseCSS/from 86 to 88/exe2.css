@@ -1,0 +1,19 @@
+*,*::before,*::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+        position: relative;
+}
+
+div {
+        width: 600px;
+        background-color: #dddddd;
+        padding: 20px;
+        margin: 30px auto;
+        position: relative;
+        font-size: 24px;
+}

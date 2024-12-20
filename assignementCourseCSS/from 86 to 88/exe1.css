@@ -1,0 +1,10 @@
+.first-div{
+        width: 100%;
+        height: 300px;
+}
+
+.parent {
+        position: relative;
+        width: 100%;
+
+}

@@ -1,0 +1,45 @@
+*,*::after,*::before {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+}
+
+body {
+        width: 100vp;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+div {
+        width: 200px;
+        height: 200px;
+        background-color: #607d8b;
+        border-bottom: 5px solid black;
+        position: relative;
+        color: white;
+}
+
+div::after {
+        content: 'elzero';
+        text-transform: capitalize;
+        position: absolute;
+        left: 5px;
+        bottom: 3px;
+        font-family: Arial, Helvetica, sans-serif;
+}
+
+div::before {
+        content: '';
+        content: '';
+        position: absolute;
+        width: 144px;
+        height: 144px;
+        background-color: black;
+        top: -69px;
+        left: 28px;
+        transform: rotate(45deg);
+        border-right: 3px solid white;
+        border-bottom: 3px solid white;
+}

@@ -1,0 +1,24 @@
+div {
+        background-color: #d7dce9;
+        width: 400px;
+        margin: 0 auto;
+        padding: 10px;
+}
+
+.hidden-article {
+        visibility: hidden;
+}
+
+.first,.seconde, .third {
+        width: 300px;
+        margin-left: 5px;
+}
+
+.first {
+        
+        border-left: 5px rgb(243, 92, 92) solid ;
+}
+.third {
+        
+        border-left: 5px rgb(18, 209, 215) solid ;
+}

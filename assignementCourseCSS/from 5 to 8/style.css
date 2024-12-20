@@ -1,0 +1,19 @@
+div {   
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+       
+}
+
+.first-div {
+        background-color: violet;
+
+}
+.second-div {
+        background-color: rgb(170, 110, 170, 50%);
+}
+.third-div {
+        background-color: rgb(170, 110, 170, 10%)
+
+}

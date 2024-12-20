@@ -1,0 +1,42 @@
+*,*::after,*::before {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+}
+
+:root {
+        --bgcolor :#ff5722; 
+}
+
+h1{
+        color: white;
+        margin: 70px auto;
+        width: 150px;
+        text-align: center;
+        padding: 10px;
+        position: relative;
+        background-color: var(--bgcolor);
+}
+
+h1::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: var(--bgcolor);
+        transform: skew(10deg, 10deg);
+        z-index: -1;
+}
+h1::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        right: 0;
+        background-color: var(--bgcolor);
+        transform: skew(-10deg, -10deg);
+        z-index: -2;
+}

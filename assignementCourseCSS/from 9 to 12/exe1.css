@@ -1,0 +1,41 @@
+.container {
+                width: 400px;
+                height: 500px;
+                border: 2px solid blue;
+                margin-left: auto;
+                margin-right: auto;
+                padding-left: 100px;
+
+}
+
+div {
+        display: inline-block;
+        width: 90px;
+        height: 60px;
+        background-color: beige;
+        border: 5px solid;
+        outline-style: solid;
+        outline-color: black;
+        outline-width: 5px;
+        margin: 5px;
+        text-align: center;
+        padding-top: 40px;
+}
+
+.first {
+        border: 5px solid red;
+       
+}
+
+.seconde {
+        
+        border-color: blue green;
+       
+}
+
+.third {
+        
+       border-style: dashed;
+       border-color: red green blue yellow;
+}
+

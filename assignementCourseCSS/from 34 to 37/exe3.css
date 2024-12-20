@@ -1,0 +1,39 @@
+p {
+        margin: 10px auto;
+        width: 500px;
+        background-color: #eee;
+        padding: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        border-left: 5px solid #e91e63;
+        position: relative;
+}
+
+p::before {
+        content: attr(data-person);
+        position: absolute;
+        left: -100px;
+        top: 50%;
+        margin-top: -18px;
+        background-color: #dddddd;
+        padding: 10px 5px;
+        width: 66px;
+        text-align: center;
+        font-size: 15px;
+        
+}
+
+p::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: -24px;
+        margin-top: -10px;
+        border-style: solid;
+        border-color: transparent #e91e63 transparent transparent;
+        border-width: 10px;
+}
+
+
+

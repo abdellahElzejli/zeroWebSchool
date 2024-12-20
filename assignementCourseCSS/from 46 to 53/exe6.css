@@ -1,0 +1,102 @@
+* {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+}
+
+:root {
+        --background-color : #dddddd;
+        --padding : 10px;
+        --margin : 10px ;
+}
+
+.page {
+        margin: var(--margin) auto;
+        padding: var(--padding);
+        width: 800px;
+        background-color: #eee;
+        display: flex;
+        flex-flow: wrap row;
+}
+
+
+.logo,.links,.content,.sidebar,.footer {
+        background-color: var(--background-color);
+}
+/* start header */
+
+.header {
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: space-between;
+        flex-basis: 100%;
+        align-items: center;
+
+}
+
+.links {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: calc(90% - 10px);
+        padding: var(--padding) 0;
+}
+
+.links li {
+        cursor: pointer;
+        margin-right: var(--margin);
+}
+
+.logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: var(--padding) 20px;
+        width: 10%;
+}
+
+/* Fin header */
+/* start main area  */
+.main-area {
+        flex-basis: 100%;
+        display: flex;
+        flex-flow: wrap row;
+        height: 300px;
+        justify-content: space-between;
+        align-content: space-between;
+        margin: var(--margin) 0;
+
+}
+
+.main-area .content,.main-area .sidebar {
+        height: 100%;
+        padding: var(--padding);
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+}
+
+.main-area .content{
+        flex-basis: calc(100% - 240px);
+       
+        
+}
+
+.main-area .sidebar{
+        flex-basis: calc(100% - (100% - 230px));
+        
+}
+/* Fin main area  */
+
+/* start footer */
+.footer {
+        flex-basis: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--padding);
+}
+/* End footer */

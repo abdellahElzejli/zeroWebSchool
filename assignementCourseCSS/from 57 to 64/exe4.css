@@ -1,0 +1,46 @@
+.grid {
+        background-color: #ddd;
+        padding: 20px;
+        width: 800px;
+        height: 400px;
+        margin: 30px auto;
+        padding: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(6,auto);
+        
+}
+
+.grid div {
+        background-color: #2196f3;
+        color: white;
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+
+}
+
+
+.grid .one {
+        grid-column: 1 / span 3;
+        order: 8;
+}
+
+.grid .eight {
+        grid-column: 1 / span 3;
+       order: -1;
+}
+
+.grid .two {
+        grid-column: 1 / span 2;
+}
+
+.grid .five{
+        grid-column: 2 / span 2;
+        grid-row: 3 / span 3;
+        order: 5;
+}

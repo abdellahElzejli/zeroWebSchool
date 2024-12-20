@@ -1,0 +1,64 @@
+*,*::before,*::after{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+}
+
+div {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        color: white;
+        font-weight: 500;
+        font-size: 2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        perspective: 400px;
+        transform-style: preserve-3d;
+}
+
+div::before{
+        content: 'front';
+        text-transform: capitalize;
+        position: absolute;
+        background-color: #ea2264;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 1s;
+        z-index: 1;
+        backface-visibility: hidden;
+}
+
+div::after{
+        content: 'back';
+        text-transform: capitalize;
+        position: absolute;
+        background-color: #1692FC;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 1s;
+        transform: rotateX(180deg);
+}
+
+div:hover::before{
+        transform: rotateX(-180deg);
+}
+div:hover::after{
+        transform: rotateX(0deg);
+}
